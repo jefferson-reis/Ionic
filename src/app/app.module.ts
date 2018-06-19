@@ -3,21 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { LoginPage } from '../pages/login/login';
+import { FiltroPage } from '../pages/filtro/filtro';
+import { CadastroPage } from '../pages/cadastro/cadastro';
+import { CadastroProdutoPage } from '../pages/cadastro-produto/cadastro-produto';
+import { ConfirmaCadastroProdutoPage } from '../pages/confirma-cadastro-produto/confirma-cadastro-produto';
+
+
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
+    LoginPage,
+    FiltroPage,
+    CadastroPage,
+    CadastroProdutoPage,
+    ConfirmaCadastroProdutoPage,
   ],
   imports: [
     BrowserModule,
@@ -26,10 +31,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
+    FiltroPage,
+    LoginPage,
+    CadastroPage,
+    CadastroProdutoPage,
+    ConfirmaCadastroProdutoPage
+
+ 
   ],
   providers: [
     StatusBar,
